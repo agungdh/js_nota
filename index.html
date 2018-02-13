@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nota</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/utama.js"></script>
+</head>
+<body>
+	<table id="tabel" border="1">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Nama</th>
+				<th>Harga</th>
+				<th>Stok</th>
+				<th>Aksi</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="1">
+				<td id="no">1</td>
+				<td id="nama">Tas</td>
+				<td id="harga">30000</td>
+				<td id="jumlah_barang"><input type="text" name="jumlah_beli" id="jumlah_beli_1" value="80"></td>
+				<td>
+					<button id="beli" type="button" onclick="beli($(this).parent().parent().prop('id'))">Beli</button>
+				</td>
+			</tr>
+			<tr id="2">
+				<td id="no">2</td>
+				<td id="nama">Pulpen</td>
+				<td id="harga">5000</td>
+				<td id="jumlah_barang"><input type="text" name="jumlah_beli" id="jumlah_beli_2" value="300"></td>
+				<td>
+					<button id="beli" type="button" onclick="beli($(this).parent().parent().prop('id'))">Beli</button>
+				</td>
+			</tr>
+			<tr id="3">
+				<td id="no">3</td>
+				<td id="nama">Pensil</td>
+				<td id="harga">3000</td>
+				<td id="jumlah_barang"><input type="text" name="jumlah_beli" id="jumlah_beli_3" value="230"></td>
+				<td>
+					<button id="beli" type="button" onclick="beli($(this).parent().parent().prop('id'))">Beli</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br><br><br>
+	
+	<table id="nota" border="1">
+		<thead>
+			<tr>
+				<th>No</th>
+				<th>Nama</th>
+				<th>Qty</th>
+				<th>Jumlah</th>
+				<th>Aksi</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+</body>
+</html>
